@@ -15,13 +15,16 @@
         }}</RouterLink>
       </li>
     </ul>
-    <div class="features"></div>
+    <div class="features">
+        <CartButton/>
+    </div>
   </header>
 </template>
 
 <script setup>
 import { navsData } from "@/data/data";
 import { ref } from "vue";
+import CartButton from "./CartButton.vue";
 const navs = ref(navsData);
 
 const handleNavActive = (id) => {
